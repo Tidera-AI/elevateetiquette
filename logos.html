@@ -1,0 +1,119 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: transparent; }
+      .press-logos { width: 100%; padding: 30px 0; overflow: hidden; }
+        .logo-fader { position: relative; width: 100%; min-height: 140px; display: flex; align-items: center; justify-content: center; }
+          .logo-group { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 70px; opacity: 0; animation-timing-function: ease-in-out; animation-fill-mode: both; }
+            .logo-group img { height: 60px; width: auto; object-fit: contain; display: block; }
+              .logo-group img.rotate { transform: rotate(90deg); }
+              
+                .group-1 { animation: showGroup1 12s infinite; }
+                  .group-2 { animation: showGroup2 12s infinite; }
+                    .group-3 { animation: showGroup3 12s infinite; }
+                      .group-4 { animation: showGroup4 12s infinite; }
+                      
+                        @keyframes showGroup1 {
+                            0%    { opacity: 1; }
+                                22.5% { opacity: 1; }
+                                    25%   { opacity: 0; }
+                                        100%  { opacity: 0; }
+                                          }
+                            @keyframes showGroup2 {
+                                0%    { opacity: 0; }
+                                    25%   { opacity: 0; }
+                                        27.5% { opacity: 1; }
+                                            47.5% { opacity: 1; }
+                                                50%   { opacity: 0; }
+                                                    100%  { opacity: 0; }
+                                                      }
+                            @keyframes showGroup3 {
+                                0%    { opacity: 0; }
+                                    50%   { opacity: 0; }
+                                        52.5% { opacity: 1; }
+                                            72.5% { opacity: 1; }
+                                                75%   { opacity: 0; }
+                                                    100%  { opacity: 0; }
+                                                      }
+                            @keyframes showGroup4 {
+                                0%    { opacity: 0; }
+                                    75%   { opacity: 0; }
+                                        77.5% { opacity: 1; }
+                                            97.5% { opacity: 1; }
+                                                100%  { opacity: 0; }
+                                                  }
+                                                                                                                                          
+                            @media (max-width: 768px) {
+                                .logo-fader { min-height: 120px; }
+                                    .logo-group { gap: 34px; padding: 0 16px; }
+                                        .logo-group img { height: 42px; }
+                                          }
+                                                                                                                                          
+                            .logo1  { height: 50px !important; }
+                            .logo2  { height: 55px !important; }
+                            .logo3  { height: 132px !important; }
+                            .logo4  { height: 30px !important; }
+                            .logo5  { height: 120px !important; }
+                            .logo6  { height: 70px !important; }
+                            .logo7  { height: 100px !important; }
+                            .logo8  { height: 85px !important; }
+                            .logo9  { height: 40px !important; }
+                            .logo10 { height: 30px !important; }
+                            .logo11 { height: 120px !important; }
+                            .logo12 { height: 120px !important; }
+                            .logo13 { height: 45px !important; }
+                            .logo14 { height: 65px !important; }
+                            .logo15 { height: 20px !important; }  /* WSJ */
+                            .logo16 { height: 35px !important; }  /* Forbes */
+                            .logo17 { height: 55px !important; }  /* People */
+                            .logo18 { height: 25px !important; }  /* Daily Wire */
+                            .logo19 { height: 40px !important; }  /* ABC News */
+                            .logo20 { height: 90px !important; }  /* Good Morning America */
+                            .logo21 { height: 25px !important; }  /* The Conservateur */
+                            .logo22 { height: 30px !important; }  /* Martha Stewart */
+</style>
+
+<section class="press-logos">
+  <div class="logo-fader">
+  
+      <!-- Group 1: Wall Street Journal, Today, Vogue, Fox News, People, Good Morning America -->
+      <div class="logo-group group-1" aria-label="As seen in logos group 1">
+            <img class="logo15" src="https://static.showit.co/file/BidlZJJ0gG7bGqrwVQX6Cw/210162/wsj.png" alt="press - elevate etiquette">
+            <img class="logo14" src="https://static.showit.co/file/XsqqbY96HmEKssVPaq7-bg/210162/today_logo.png" alt="press - elevate etiquette">
+            <img class="logo4" src="https://static.showit.co/200/XA0uANMnCxXbdCbp0IEwkg/210162/vogue_logo.png" alt="press - elevate etiquette">
+            <img class="logo6" src="https://static.showit.co/200/1cFU-XzRgAeJW0REKGvKAA/210162/foxnews.png" alt="press - elevate etiquette">
+            <img class="logo17" src="https://static.showit.co/file/b5oT-e80n2ugzfimP_RD_w/210162/people.png" alt="press - elevate etiquette">
+            <img class="logo20" src="https://static.showit.co/file/H3bIX2Fzw7vqRVtxt1McsA/210162/good_morning_america_2021_logo_svg.png" alt="press - elevate etiquette">
+      </div>
+      
+      <!-- Group 2: New York Times, Martha Stewart, Southern Living, Brides, Elevate, Daily Wire -->
+      <div class="logo-group group-2" aria-label="As seen in logos group 2">
+            <img class="logo10" src="https://static.showit.co/200/m21toh4h-GvXq7piY2ULhg/210162/image-removebg-preview_1.png" alt="press - elevate etiquette">
+            <img class="logo22" src="https://static.showit.co/file/GgAEKne8XcxO2nUyEQW2GQ/210162/marthastewart.png" alt="press - elevate etiquette">
+            <img class="logo9" src="https://static.showit.co/200/C72HvN2G4q2LYP4PJtJmJg/210162/image-removebg-preview.png" alt="press - elevate etiquette">
+            <img class="logo2" src="https://static.showit.co/200/GAG0uhhmG1UKCGJE9HgTaA/210162/brides.png" alt="press - elevate etiquette">
+            <img class="logo5" src="https://static.showit.co/200/fRDty1JwaSuaNjYL9SsAVw/210162/2.png" alt="press - elevate etiquette">
+            <img class="logo18" src="https://static.showit.co/file/GvQrrxnp7xjpc5PDOrcrdA/210162/dailywirelogo.svg" alt="press - elevate etiquette">
+      </div>
+      
+      <!-- Group 3: Forbes, Congress, Washington Post, Better Homes & Gardens, ABC News -->
+      <div class="logo-group group-3" aria-label="As seen in logos group 3">
+            <img class="logo16" src="https://static.showit.co/file/Td9OUhXFdOOwSgGi24JEzA/210162/forbes.png" alt="press - elevate etiquette">
+            <img class="logo8" src="https://static.showit.co/200/qSk11PHAGuU2M01gyOFiKQ/210162/congress.png" alt="press - elevate etiquette">
+            <img class="logo11" src="https://static.showit.co/200/6UVgO77w_zrMnZO1UoRfmA/210162/1.png" alt="press - elevate etiquette">
+            <img class="logo12" src="https://static.showit.co/200/b3sxEA0-NvboYWfB9PVRtQ/210162/image_51.png" alt="press - elevate etiquette">
+            <img class="logo19" src="https://static.showit.co/file/cBeS0o-o0mTtqQEon0lOrQ/210162/abc_news_logo_2021_svg.png" alt="press - elevate etiquette">
+      </div>
+      
+      <!-- Group 4: Daily Mail, Fox Business, New York Post, Not Alone, The Conservateur -->
+      <div class="logo-group group-4" aria-label="As seen in logos group 4">
+            <img class="logo3" src="https://static.showit.co/200/c0vWhXNuMo32JnjPqGPF_w/210162/dailymail.png" alt="press - elevate etiquette">
+            <img class="logo13" src="https://static.showit.co/file/Oe0EyjY4Qzy-CWWnEo1tLQ/210162/fox_business.png" alt="press - elevate etiquette">
+            <img class="logo1" src="https://static.showit.co/200/X_kfyk21Oag9t1EZ9zrfQg/210162/nyp.png" alt="press - elevate etiquette">
+            <img class="logo7 rotate" src="https://static.showit.co/200/PvUiey4MbNoiFBi7R5Uw_Q/210162/notalone.png" alt="press - elevate etiquette">
+            <img class="logo21" src="https://static.showit.co/file/EIYCqYIdNf0MMP_MBLVZyA/210162/the_conservateur.png" alt="press - elevate etiquette">
+      </div>
+      
+  </div>
+</section>
