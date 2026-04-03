@@ -69,6 +69,16 @@
       position: relative;
       z-index: 1;
     }
+    .header-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 36px;
+      opacity: 0.85;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.2s;
+    }
+    .header-logo:hover { opacity: 1; }
     .header-label {
       font-size: 0.75rem;
       letter-spacing: 0.15em;
@@ -702,6 +712,7 @@
   <!-- Header -->
   <header class="header">
     <div class="header-inner">
+      <img src="tidera-logo.webp" alt="Tidera AI" class="header-logo">
       <div class="header-label">Website Report</div>
       <h1>Elevate Etiquette</h1>
       <p class="header-sub">Your brand already looks beautiful. Here's how to make your website work as hard as you do &mdash; turning more visitors into clients.</p>

@@ -1,4 +1,5 @@
-# Only publish index.html — ignore everything else
+# Only publish site assets — ignore everything else
 *
 !index.html
+!tidera-logo.webp
 !.gitignore
