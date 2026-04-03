@@ -1,0 +1,4 @@
+# Only publish index.html — ignore everything else
+*
+!index.html
+!.gitignore
