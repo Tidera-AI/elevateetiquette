@@ -911,7 +911,7 @@
       <p class="gate-sub">Enter the password to view this report.</p>
       <form id="passwordForm" onsubmit="return false;">
         <div class="password-input-wrap">
-          <input type="password" id="passwordInput" placeholder="Password" autocomplete="off" autofocus>
+          <input type="password" id="passwordInput" placeholder="Password" autocomplete="off">
         </div>
         <button type="submit" class="password-submit">View Report</button>
       </form>
@@ -4971,6 +4971,9 @@
 
       if (sessionStorage.getItem('ee_authed') === '1') {
         gate.classList.add('hidden');
+        window.scrollTo(0, 0);
+      } else {
+        input.focus();
       }
 
       form.addEventListener('submit', async function() {
@@ -4978,6 +4981,7 @@
         if (hash === PASS_HASH) {
           sessionStorage.setItem('ee_authed', '1');
           gate.classList.add('hidden');
+          window.scrollTo(0, 0);
         } else {
           input.classList.add('error');
           errorMsg.classList.add('visible');
