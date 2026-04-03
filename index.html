@@ -125,6 +125,12 @@
       margin-top: 40px;
       position: relative;
       z-index: 1;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .tab-bar::-webkit-scrollbar {
+      display: none;
     }
     .tab-btn {
       font-family: 'DM Sans', sans-serif;
@@ -138,6 +144,8 @@
       cursor: pointer;
       border-radius: var(--radius-sm) var(--radius-sm) 0 0;
       transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
     .tab-btn:hover {
       background: rgba(255,255,255,0.12);
