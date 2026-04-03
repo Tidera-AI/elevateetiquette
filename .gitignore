@@ -3,3 +3,7 @@
 !index.html
 !tidera-logo.webp
 !.gitignore
+!2026-01-20_scraped-sites/
+!2026-01-20_scraped-sites/**
+.DS_Store
+*.zip

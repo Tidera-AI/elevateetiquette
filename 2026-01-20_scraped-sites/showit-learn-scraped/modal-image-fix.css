@@ -1,0 +1,128 @@
+/**
+ * Modal Image Fix - CSS
+ * 
+ * CSS fixes to prevent images from not appearing in modals/pop-ups
+ */
+
+/* Ensure modal containers have proper dimensions */
+[role="dialog"] img,
+[role="alertdialog"] img,
+.modal img,
+.popup img,
+.lightbox img,
+.overlay img,
+[aria-modal="true"] img {
+    /* Ensure images are visible and properly sized */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    /* Force hardware acceleration for better rendering */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    
+    /* Ensure image is rendered even if dimensions aren't calculated */
+    min-height: 1px;
+    min-width: 1px;
+}
+
+/* Prevent layout shift when images load */
+[role="dialog"] img:not([src]),
+[role="alertdialog"] img:not([src]),
+.modal img:not([src]),
+.popup img:not([src]),
+.lightbox img:not([src]),
+.overlay img:not([src]),
+[aria-modal="true"] img:not([src]) {
+    visibility: hidden;
+}
+
+/* Fix for images that are children of flex or grid containers */
+[role="dialog"] img,
+[role="alertdialog"] img,
+.modal img,
+.popup img,
+.lightbox img,
+.overlay img,
+[aria-modal="true"] img {
+    flex-shrink: 0;
+}
+
+/* Ensure the modal itself is properly sized */
+[role="dialog"],
+[role="alertdialog"],
+.modal,
+.popup,
+.lightbox,
+.overlay,
+[aria-modal="true"] {
+    /* Force GPU rendering */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Fix for images inside elements with display:none that become visible */
+.modal.show img,
+.modal.active img,
+.modal.open img,
+.popup.show img,
+.popup.active img,
+.popup.open img,
+[aria-hidden="false"] img {
+    /* Force repaint when modal becomes visible */
+    animation: force-repaint 0.01s;
+}
+
+@keyframes force-repaint {
+    0% { opacity: 0.99; }
+    100% { opacity: 1; }
+}
+
+/* Specific fix for images in Intercom-style help centers */
+.article__media img,
+.article__body img,
+.paper__body img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Fix for lazy-loaded images in modals */
+[role="dialog"] img[loading="lazy"],
+[role="alertdialog"] img[loading="lazy"],
+.modal img[loading="lazy"],
+.popup img[loading="lazy"],
+.lightbox img[loading="lazy"],
+.overlay img[loading="lazy"],
+[aria-modal="true"] img[loading="lazy"] {
+    /* Disable lazy loading for modal images to ensure immediate visibility */
+    content-visibility: auto;
+}
+
+/* Ensure image containers have proper dimensions */
+[role="dialog"] .image-container,
+[role="dialog"] .img-wrapper,
+[role="dialog"] figure,
+.modal .image-container,
+.modal .img-wrapper,
+.modal figure,
+.popup .image-container,
+.popup .img-wrapper,
+.popup figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    min-height: 1px;
+}
+
+/* Fix for absolutely positioned images in modals */
+[role="dialog"] img[style*="position: absolute"],
+.modal img[style*="position: absolute"],
+.popup img[style*="position: absolute"] {
+    /* Ensure proper rendering of absolutely positioned images */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
