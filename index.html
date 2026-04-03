@@ -669,90 +669,6 @@
       margin-top: 4px;
     }
 
-    /* --- Analytics Dashboard Tab --- */
-    .ana-wash-blush { background: linear-gradient(180deg, var(--color-bg) 0%, #f0dade 30%, #f0dade 70%, var(--color-bg) 100%); }
-    .ana-wash-blue { background: linear-gradient(180deg, var(--color-bg) 0%, #edf0f5 30%, #edf0f5 70%, var(--color-bg) 100%); }
-    .ana-hero { text-align: center; padding: 64px 24px 48px; position: relative; overflow: hidden; }
-    .ana-hero::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 20% 30%, rgba(197,207,224,0.25), transparent 50%), radial-gradient(ellipse at 80% 40%, rgba(240,218,222,0.3), transparent 50%); pointer-events:none; }
-    .ana-hero-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--color-accent); font-weight:600; margin-bottom:12px; position:relative; }
-    .ana-hero h2 { font-family:'DM Serif Display',serif; font-size:clamp(1.75rem,4vw,2.75rem); font-weight:400; line-height:1.15; margin-bottom:12px; position:relative; }
-    .ana-hero p { font-size:0.95rem; color:var(--color-text-secondary); max-width:48ch; margin:0 auto; line-height:1.65; position:relative; }
-    .ana-hero-meta { display:flex; justify-content:center; gap:24px; margin-top:20px; position:relative; }
-    .ana-hero-meta span { font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--color-text-tertiary); }
-    .ana-stat-band { display:flex; justify-content:center; gap:56px; padding:48px 24px; flex-wrap:wrap; }
-    .ana-stat-item { text-align:center; }
-    .ana-stat-item .ana-val { font-family:'JetBrains Mono',monospace; font-size:clamp(1.75rem,4vw,2.5rem); font-weight:500; color:var(--color-text); line-height:1; }
-    .ana-stat-item .ana-val .ana-plus { color:var(--color-accent); font-weight:400; }
-    .ana-stat-item .ana-lbl { font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; color:var(--color-text-tertiary); margin-top:8px; }
-    .ana-stat-item .ana-note { font-size:0.8rem; font-style:italic; color:var(--color-text-tertiary); margin-top:3px; }
-    .ana-ornament { display:flex; align-items:center; justify-content:center; gap:14px; margin:0 auto 40px; max-width:200px; }
-    .ana-ornament .ana-oline { flex:1; height:1px; background:var(--color-border); }
-    .ana-ornament .ana-odot { width:5px; height:5px; border-radius:50%; background:var(--color-accent); }
-    .ana-section-label { text-align:center; font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:600; color:var(--color-text-tertiary); margin-bottom:10px; }
-    .ana-section-heading { text-align:center; font-family:'DM Serif Display',serif; font-size:clamp(1.35rem,3vw,1.85rem); font-weight:400; color:var(--color-text); margin-bottom:40px; line-height:1.3; }
-    .ana-section-heading em { font-style:italic; }
-    .ana-pgrid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; max-width:900px; margin:0 auto; }
-    @media(max-width:768px){ .ana-pgrid{grid-template-columns:1fr;} }
-    .ana-pcard { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius); padding:28px 30px 24px; box-shadow:var(--shadow-sm); transition:box-shadow 0.35s ease,transform 0.35s ease; }
-    .ana-pcard:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
-    .ana-pcard-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
-    .ana-pcard-name { font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:600; color:var(--color-text-tertiary); }
-    .ana-pcard-icon { width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
-    .ana-pcard-icon svg { width:14px; height:14px; }
-    .ana-pcard-icon.ig { background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7); color:#fff; }
-    .ana-pcard-icon.th { background:#1A1A1A; color:#fff; }
-    .ana-pcard-icon.tt { background:#1A1A1A; color:#fff; }
-    .ana-pcard-icon.fb { background:#1877f2; color:#fff; }
-    .ana-pcard-icon.ltk { background:#1A1A1A; color:#fff; }
-    .ana-pcard-icon.ss { background:#ff6719; color:#fff; }
-    .ana-pcard-val { font-family:'JetBrains Mono',monospace; font-size:1.75rem; font-weight:500; color:var(--color-text); line-height:1; }
-    .ana-pcard-val .ana-plus { color:var(--color-accent); font-weight:400; }
-    .ana-pcard-handle { font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--color-text-tertiary); margin-top:4px; }
-    .ana-pcard-details { display:flex; gap:24px; margin-top:16px; padding-top:14px; border-top:1px solid var(--color-border-light); }
-    .ana-pcard-detail { display:flex; flex-direction:column; }
-    .ana-pcard-detail .ana-dv { font-family:'JetBrains Mono',monospace; font-size:0.82rem; font-weight:500; color:var(--color-text); }
-    .ana-pcard-detail .ana-dl { font-size:0.65rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--color-text-tertiary); margin-top:2px; }
-    .ana-pcard-badge { display:inline-flex; align-items:center; gap:5px; font-size:0.75rem; font-style:italic; color:var(--color-accent); }
-    .ana-pcard-badge::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--color-accent); opacity:0.6; }
-    .ana-dist-section { max-width:680px; margin:0 auto; }
-    .ana-dist-row { display:grid; grid-template-columns:140px 1fr 60px; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--color-border-light); }
-    .ana-dist-row:last-child { border-bottom:none; }
-    @media(max-width:480px){ .ana-dist-row{grid-template-columns:100px 1fr 48px; gap:10px;} }
-    .ana-dist-row .ana-dn { font-size:0.88rem; font-weight:500; color:var(--color-text); }
-    .ana-dist-track { height:7px; background:var(--color-border-light); border-radius:100px; overflow:hidden; }
-    .ana-dist-fill { height:100%; border-radius:100px; width:0%; transition:width 1.3s cubic-bezier(0.16,1,0.3,1); }
-    .ana-dist-fill.ana-rose { background:#c9a0a7; }
-    .ana-dist-fill.ana-blue { background:#c5cfe0; }
-    .ana-dist-fill.ana-dark { background:#6B6B6B; }
-    .ana-dist-fill.ana-gold { background:var(--color-accent); }
-    .ana-dist-row .ana-dp { font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--color-text-tertiary); text-align:right; }
-    .ana-ring-wrap { display:flex; flex-direction:column; align-items:center; gap:24px; margin-top:56px; }
-    .ana-ring-outer { position:relative; width:180px; height:180px; }
-    .ana-ring-outer svg { width:100%; height:100%; transform:rotate(-90deg); }
-    .ana-ring-outer .ana-rbg { fill:none; stroke:var(--color-border-light); stroke-width:9; }
-    .ana-ring-outer .ana-rmain { fill:none; stroke:#c9a0a7; stroke-width:9; stroke-linecap:round; stroke-dasharray:502.65; stroke-dashoffset:502.65; transition:stroke-dashoffset 1.6s cubic-bezier(0.16,1,0.3,1); }
-    .ana-ring-outer .ana-rother { fill:none; stroke:#c5cfe0; stroke-width:9; stroke-linecap:round; stroke-dasharray:502.65; stroke-dashoffset:502.65; transition:stroke-dashoffset 1.6s cubic-bezier(0.16,1,0.3,1) 0.2s; }
-    .ana-ring-label { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
-    .ana-ring-label .ana-rpct { font-family:'JetBrains Mono',monospace; font-size:1.85rem; font-weight:500; color:var(--color-text); line-height:1; }
-    .ana-ring-label .ana-rtxt { font-size:0.78rem; font-style:italic; color:var(--color-text-tertiary); margin-top:4px; }
-    .ana-ring-legend { display:flex; gap:24px; }
-    .ana-ring-legend .ana-rli { display:flex; align-items:center; gap:6px; font-size:0.82rem; color:var(--color-text-secondary); }
-    .ana-ring-legend .ana-rld { width:8px; height:8px; border-radius:50%; }
-    .ana-igrid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; max-width:820px; margin:0 auto; }
-    @media(max-width:768px){ .ana-igrid{grid-template-columns:1fr;} }
-    .ana-insight { padding:24px 28px; border-left:3px solid var(--color-border-light); transition:border-color 0.3s ease; }
-    .ana-insight:hover { border-color:var(--color-accent); }
-    .ana-insight h3 { font-family:'DM Serif Display',serif; font-size:1.05rem; font-weight:400; margin-bottom:8px; line-height:1.3; }
-    .ana-insight p { font-size:0.85rem; color:var(--color-text-secondary); line-height:1.65; max-width:42ch; }
-    .ana-uv-list { max-width:540px; margin:0 auto; }
-    .ana-uv-row { display:flex; align-items:center; justify-content:space-between; padding:13px 0; border-bottom:1px solid var(--color-border-light); }
-    .ana-uv-row:last-child { border-bottom:none; }
-    .ana-uv-left { display:flex; flex-direction:column; }
-    .ana-uv-left .ana-uvn { font-size:0.88rem; font-weight:500; color:var(--color-text); }
-    .ana-uv-left .ana-uvh { font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--color-text-tertiary); }
-    .ana-uv-tag { font-size:0.72rem; font-style:italic; color:var(--color-text-tertiary); background:var(--color-border-light); padding:3px 10px; border-radius:100px; }
-    .ana-footer-script { font-family:'DM Serif Display',serif; font-size:1.75rem; font-weight:400; color:var(--color-text-tertiary); text-align:center; margin-bottom:16px; }
-
     /* --- Footer --- */
     .footer {
       text-align: center;
@@ -936,7 +852,6 @@
       <nav class="tab-bar">
         <button class="tab-btn active" data-tab="roadmap">90-Day Roadmap</button>
         <button class="tab-btn" data-tab="tasks">Task Breakdown</button>
-        <button class="tab-btn" data-tab="analytics">Analytics Dashboard</button>
         <button class="tab-btn" data-tab="brand">Brand Intelligence</button>
         <button class="tab-btn" data-tab="copy">Copy Review</button>
         <button class="tab-btn" data-tab="design">Design Review</button>
@@ -2504,7 +2419,7 @@
   </div>
 
   <!-- ============================================ -->
-  <!-- TAB: Analytics Dashboard                      -->
+  <!-- TAB: Task Breakdown                            -->
   <!-- ============================================ -->
   <div class="tab-panel" id="tab-tasks">
     <main class="main">
@@ -2734,95 +2649,6 @@
       </div>
 
     </main>
-  </div>
-
-  <div class="tab-panel" id="tab-analytics">
-    <div class="ana-hero">
-      <div class="ana-hero-label">Live Metrics</div>
-      <h2>Audience Intelligence</h2>
-      <p>Verified follower counts across all discoverable public profiles for Alison M. Cheperdak, J.D. and the Elevate Etiquette brand.</p>
-      <div class="ana-hero-meta"><span>April 2, 2026</span><span>&middot;</span><span>Brave Search API</span></div>
-    </div>
-    <div class="ana-wash-blush">
-      <div class="ana-stat-band">
-        <div class="ana-stat-item"><div class="ana-val"><span class="ana-counter" data-target="725837">0</span><span class="ana-plus">+</span></div><div class="ana-lbl">Total Verified Followers</div><div class="ana-note">across 8 platforms</div></div>
-        <div class="ana-stat-item"><div class="ana-val">8 <span style="font-size:0.85rem;color:var(--color-text-tertiary);">/ 11</span></div><div class="ana-lbl">Platforms Verified</div><div class="ana-note">3 require login access</div></div>
-        <div class="ana-stat-item"><div class="ana-val">87.1<span class="ana-plus">%</span></div><div class="ana-lbl">On Instagram</div><div class="ana-note">dominant platform</div></div>
-      </div>
-    </div>
-    <main class="main">
-      <div class="ana-section-label">Platform by Platform</div>
-      <div class="ana-section-heading">Where Your <em>Audience</em> Lives</div>
-      <div class="ana-ornament"><span class="ana-oline"></span><span class="ana-odot"></span><span class="ana-oline"></span></div>
-      <div class="ana-pgrid">
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">Instagram</span><div class="ana-pcard-icon ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></div></div><div class="ana-pcard-val"><span class="ana-counter" data-target="632000">0</span></div><div class="ana-pcard-handle">@elevateetiquette</div><div class="ana-pcard-details"><div class="ana-pcard-detail"><span class="ana-dv">3,252</span><span class="ana-dl">Following</span></div><div class="ana-pcard-detail"><span class="ana-dv">2,248</span><span class="ana-dl">Posts</span></div><div class="ana-pcard-detail"><span class="ana-pcard-badge">Confirmed</span></div></div></div>
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">Threads</span><div class="ana-pcard-icon th"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.506 5.47l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.59 12c.025 3.086.718 5.496 2.057 7.164 1.432 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.17.408-2.22 1.33-2.956.81-.646 1.9-1.01 3.088-1.065.857-.04 1.688.018 2.49.175-.07-.457-.206-.838-.408-1.15-.394-.61-1.088-.93-2.065-.955h-.06c-.782 0-1.863.253-2.424 1.064l-1.713-1.154c.85-1.263 2.19-1.93 3.878-1.93h.09c1.555.043 2.77.584 3.61 1.607.715.87 1.122 2.005 1.222 3.396.497.228.96.5 1.381.822 1.295.987 2.166 2.4 2.523 4.09.397 1.878.093 4.038-1.455 5.603C18.053 23.15 15.62 23.975 12.186 24z"/></svg></div></div><div class="ana-pcard-val"><span class="ana-counter" data-target="43900">0</span></div><div class="ana-pcard-handle">@elevateetiquette</div><div class="ana-pcard-details"><div class="ana-pcard-detail"><span class="ana-dv">~816</span><span class="ana-dl">Posts</span></div><div class="ana-pcard-detail"><span class="ana-dv">6.0%</span><span class="ana-dl">Share</span></div></div></div>
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">TikTok</span><div class="ana-pcard-icon tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 01-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 01-2.882 2.783 2.896 2.896 0 01-2.881-2.913 2.896 2.896 0 012.881-2.879c.302 0 .594.048.871.134V9.291a6.31 6.31 0 00-.871-.06 6.384 6.384 0 00-6.381 6.387 6.384 6.384 0 006.381 6.382 6.384 6.384 0 006.38-6.382V9.44a8.227 8.227 0 004.817 1.547V7.543a4.795 4.795 0 01-1.1-.857z"/></svg></div></div><div class="ana-pcard-val"><span class="ana-counter" data-target="39000">0</span></div><div class="ana-pcard-handle">@elevateetiquette</div><div class="ana-pcard-details"><div class="ana-pcard-detail"><span class="ana-dv">400.8K</span><span class="ana-dl">Likes</span></div><div class="ana-pcard-detail"><span class="ana-dv">10.3x</span><span class="ana-dl">Like Ratio</span></div></div></div>
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">Substack</span><div class="ana-pcard-icon ss"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg></div></div><div class="ana-pcard-val">5,300<span class="ana-plus">+</span></div><div class="ana-pcard-handle">The Elevate Edit</div><div class="ana-pcard-details"><div class="ana-pcard-detail"><span class="ana-pcard-badge">Highest-value segment</span></div></div></div>
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">LTK / ShopLTK</span><div class="ana-pcard-icon ltk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div></div><div class="ana-pcard-val"><span class="ana-counter" data-target="5400">0</span></div><div class="ana-pcard-handle">elevateetiquette</div><div class="ana-pcard-details"><div class="ana-pcard-detail"><span class="ana-pcard-badge">Buyers, not browsers</span></div></div></div>
-        <div class="ana-pcard"><div class="ana-pcard-top"><span class="ana-pcard-name">Facebook</span><div class="ana-pcard-icon fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div></div><div style="display:flex;gap:36px;"><div><div style="font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--color-text-tertiary);margin-bottom:5px;">Business Page</div><div class="ana-pcard-val" style="font-size:1.35rem;">126</div><div class="ana-pcard-handle">126 likes &middot; 126 followers</div></div><div style="border-left:1px solid var(--color-border-light);padding-left:36px;"><div style="font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--color-text-tertiary);margin-bottom:5px;">Personal Page</div><div class="ana-pcard-val" style="font-size:1.35rem;">111</div><div class="ana-pcard-handle">28 likes &middot; 111 followers</div></div></div></div>
-      </div>
-    </main>
-    <div class="ana-wash-blue">
-      <div style="max-width:900px;margin:0 auto;padding:48px 24px;">
-        <div class="ana-section-label">Audience Share</div>
-        <div class="ana-section-heading">How Your Following <em>Distributes</em></div>
-        <div class="ana-ornament"><span class="ana-oline"></span><span class="ana-odot"></span><span class="ana-oline"></span></div>
-        <div class="ana-dist-section" id="ana-dist-section">
-          <div class="ana-dist-row"><span class="ana-dn">Instagram</span><div class="ana-dist-track"><div class="ana-dist-fill ana-rose" data-width="87.1"></div></div><span class="ana-dp">87.1%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">Threads</span><div class="ana-dist-track"><div class="ana-dist-fill ana-blue" data-width="6.0"></div></div><span class="ana-dp">6.0%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">TikTok</span><div class="ana-dist-track"><div class="ana-dist-fill ana-dark" data-width="5.4"></div></div><span class="ana-dp">5.4%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">LTK</span><div class="ana-dist-track"><div class="ana-dist-fill ana-gold" data-width="0.74"></div></div><span class="ana-dp">0.7%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">Substack</span><div class="ana-dist-track"><div class="ana-dist-fill ana-gold" data-width="0.73"></div></div><span class="ana-dp">0.7%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">Facebook (biz)</span><div class="ana-dist-track"><div class="ana-dist-fill ana-blue" data-width="0.25"></div></div><span class="ana-dp">&lt;0.1%</span></div>
-          <div class="ana-dist-row"><span class="ana-dn">Facebook (personal)</span><div class="ana-dist-track"><div class="ana-dist-fill ana-blue" data-width="0.25"></div></div><span class="ana-dp">&lt;0.1%</span></div>
-        </div>
-        <div class="ana-ring-wrap">
-          <div class="ana-ring-outer" id="ana-ring">
-            <svg viewBox="0 0 180 180"><circle class="ana-rbg" cx="90" cy="90" r="80"/><circle class="ana-rother" cx="90" cy="90" r="80" data-pct="12.9"/><circle class="ana-rmain" cx="90" cy="90" r="80" data-pct="87.1"/></svg>
-            <div class="ana-ring-label"><span class="ana-rpct">87.1%</span><span class="ana-rtxt">Instagram</span></div>
-          </div>
-          <div class="ana-ring-legend"><div class="ana-rli"><span class="ana-rld" style="background:#c9a0a7;"></span> Instagram</div><div class="ana-rli"><span class="ana-rld" style="background:#c5cfe0;"></span> All Other Platforms</div></div>
-        </div>
-      </div>
-    </div>
-    <div style="max-width:900px;margin:0 auto;padding:48px 24px;">
-      <div class="ana-section-label">Pending Verification</div>
-      <div class="ana-section-heading">Platforms We <em>Could Not</em> Count</div>
-      <div class="ana-ornament"><span class="ana-oline"></span><span class="ana-odot"></span><span class="ana-oline"></span></div>
-      <div class="ana-uv-list">
-        <div class="ana-uv-row"><div class="ana-uv-left"><span class="ana-uvn">LinkedIn</span><span class="ana-uvh">alison-m-cheperdak</span></div><span class="ana-uv-tag">Login required</span></div>
-        <div class="ana-uv-row"><div class="ana-uv-left"><span class="ana-uvn">TalkShopLive</span><span class="ana-uvh">alisoncheperdak</span></div><span class="ana-uv-tag">Not exposed</span></div>
-        <div class="ana-uv-row"><div class="ana-uv-left"><span class="ana-uvn">Amazon Storefront</span><span class="ana-uvh">elevateetiquette</span></div><span class="ana-uv-tag">Not exposed</span></div>
-        <div class="ana-uv-row"><div class="ana-uv-left"><span class="ana-uvn">Instagram (Personal)</span><span class="ana-uvh">@alichep</span></div><span class="ana-uv-tag">Private account</span></div>
-      </div>
-    </div>
-    <div class="ana-wash-blush">
-      <div style="max-width:900px;margin:0 auto;padding:48px 24px;">
-        <div class="ana-section-label">What This Means</div>
-        <div class="ana-section-heading">Key <em>Insights</em></div>
-        <div class="ana-ornament"><span class="ana-oline"></span><span class="ana-odot"></span><span class="ana-oline"></span></div>
-        <div class="ana-igrid">
-          <div class="ana-insight"><h3>Concentration Risk</h3><p>87% of your audience lives on a single platform. An Instagram algorithm shift or outage would disproportionately impact total reach. Diversification is the clearest growth lever.</p></div>
-          <div class="ana-insight"><h3>TikTok Outperforms</h3><p>A 10.3x like-to-follower ratio signals your content resonates well beyond your subscriber base. More consistent posting could convert viewers into followers at an accelerated rate.</p></div>
-          <div class="ana-insight"><h3>Substack Is the Safety Net</h3><p>5.3K email subscribers represent your most owned, portable, and monetizable audience. Unlike social followers, these contacts travel with you regardless of any platform change.</p></div>
-          <div class="ana-insight"><h3>Facebook Is Underweight</h3><p>126 followers on the business page versus 632K on Instagram. Even passive cross-posting to Facebook could grow that number 10-50x given the audience overlap.</p></div>
-        </div>
-      </div>
-    </div>
-    <div style="max-width:900px;margin:0 auto;padding:32px 24px;">
-      <div class="ana-section-label">Not Active On</div>
-      <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:20px;">
-        <div style="text-align:center;"><div style="font-size:0.88rem;font-weight:500;">Twitter / X</div><div style="font-size:0.78rem;font-style:italic;color:var(--color-text-tertiary);margin-top:2px;">Mentioned by others only</div></div>
-        <div style="text-align:center;"><div style="font-size:0.88rem;font-weight:500;">YouTube</div><div style="font-size:0.78rem;font-style:italic;color:var(--color-text-tertiary);margin-top:2px;">No channel</div></div>
-        <div style="text-align:center;"><div style="font-size:0.88rem;font-weight:500;">Pinterest</div><div style="font-size:0.78rem;font-style:italic;color:var(--color-text-tertiary);margin-top:2px;">Organic presence only</div></div>
-      </div>
-    </div>
-    <div style="text-align:center;padding:32px 24px 16px;color:var(--color-text-tertiary);font-size:0.82rem;">
-      <div class="ana-footer-script">Elevate Etiquette</div>
-      <p>Data collected April 2, 2026 from publicly accessible platform profiles.</p>
-      <p style="margin-top:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;background:var(--color-border-light);padding:3px 10px;border-radius:100px;">Brave Search API v1</span></p>
-    </div>
   </div>
 
   <!-- ============================================ -->
@@ -5003,34 +4829,8 @@
         btn.classList.add('active');
         document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        if (btn.dataset.tab === 'analytics') setTimeout(anaInit, 100);
       });
     });
-
-    var anaRan = false;
-    function anaInit() {
-      if (anaRan) return;
-      anaRan = true;
-      document.querySelectorAll('.ana-counter').forEach(function(el) {
-        var target = parseInt(el.dataset.target, 10), duration = 2000, start = performance.now();
-        function step(now) {
-          var t = Math.min((now - start) / duration, 1);
-          el.textContent = Math.round((1 - Math.pow(1 - t, 4)) * target).toLocaleString();
-          if (t < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-      });
-      var ds = document.getElementById('ana-dist-section');
-      if (ds) {
-        var dObs = new IntersectionObserver(function(e) { e.forEach(function(en) { if (en.isIntersecting) { en.target.querySelectorAll('.ana-dist-fill').forEach(function(b) { setTimeout(function(){ b.style.width = Math.max(parseFloat(b.dataset.width),1.2)+'%'; },200); }); dObs.unobserve(en.target); } }); }, {threshold:0.2});
-        dObs.observe(ds);
-      }
-      var rg = document.getElementById('ana-ring'), circ = 2 * Math.PI * 80;
-      if (rg) {
-        var rObs = new IntersectionObserver(function(e) { e.forEach(function(en) { if (en.isIntersecting) { en.target.querySelectorAll('.ana-rmain,.ana-rother').forEach(function(r) { var p=parseFloat(r.dataset.pct); setTimeout(function(){ r.style.strokeDashoffset = circ-(p/100)*circ; },300); }); rObs.unobserve(en.target); } }); }, {threshold:0.3});
-        rObs.observe(rg);
-      }
-    }
 
     // Task Breakdown filters
     document.querySelectorAll('#taskFilters .task-filter-btn').forEach(function(btn) {
